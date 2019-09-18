@@ -3,7 +3,7 @@
 @section('content')
 
     @component('partials.hero')
-        Contact Page
+       {{ $page_title }}
     @endcomponent
 
     @include('partials.nav')
