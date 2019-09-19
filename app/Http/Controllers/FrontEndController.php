@@ -13,14 +13,8 @@ class FrontEndController extends Controller
     }
 
 
-    public function page( Request $request, $slug)
+    public function page( Page $page)
     {
-
-        // Get page from DB based on the slug
-
-        $page = Page::whereSlug($slug)
-                    ->first();   
-
         return view('pages.static', compact('page'));
     }
 

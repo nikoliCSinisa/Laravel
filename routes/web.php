@@ -13,5 +13,5 @@
 
 Route::get('/', 'FrontEndController@home') -> name('home');
 
-Route::get('/{slug}', 'FrontEndController@page');
+Route::get('/{page}', 'FrontEndController@page');
 
