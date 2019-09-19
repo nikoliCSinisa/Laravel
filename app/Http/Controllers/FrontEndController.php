@@ -18,7 +18,7 @@ class FrontEndController extends Controller
 
         // Get page from DB based on the slug
 
-        $page = Page::where('slug', $slug)
+        $page = Page::whereSlug($slug)
                     ->first();   
 
         return view('pages.static', compact('page'));
